@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zhcw.zfb.pay.mapper.TestMapper" >
+  <resultMap id="BaseResultMap" type="com.zhcw.zfb.pay.pojo.TestPojo" >
+    <result column="id" property="id" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="DOUBLE" />
+    <result column="age" property="age" jdbcType="DOUBLE" />
+  </resultMap>
+
+
+
+  <select id="selectAllInfo" parameterType="com.zhcw.zfb.pay.pojo.TestPojo" resultMap="BaseResultMap">
+    select * from test;
+  </select>
+
+
+</mapper>

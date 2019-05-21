@@ -1,0 +1,107 @@
+2019-05-21 15:07:54.719  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on bogon with PID 890 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
+2019-05-21 15:07:54.724  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
+2019-05-21 15:07:57.420  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
+2019-05-21 15:07:57.556  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-21 15:07:57.557  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-21 15:07:57.902  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-21 15:07:57.902  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3048 ms
+2019-05-21 15:07:59.192  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-21 15:07:59.772  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
+2019-05-21 15:07:59.780  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 5.886 seconds (JVM running for 12.124)
+2019-05-21 15:08:32.173  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-21 15:08:32.173  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-21 15:08:32.187  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2019-05-21 15:08:32.271  [http-nio-8767-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-05-21 15:08:32.278  [http-nio-8767-exec-1] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-05-21 15:08:32.763  [http-nio-8767-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-05-21 15:08:32.779  [http-nio-8767-exec-1] DEBUG c.z.z.p.m.TestMapper.selectAllInfo - ==>  Preparing: select * from test; 
+2019-05-21 15:08:32.818  [http-nio-8767-exec-1] DEBUG c.z.z.p.m.TestMapper.selectAllInfo - ==> Parameters: 
+2019-05-21 15:08:32.872  [http-nio-8767-exec-1] DEBUG c.z.z.p.m.TestMapper.selectAllInfo - <==      Total: 3
+2019-05-21 15:09:20.455  [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s588ms).
+2019-05-21 15:09:20.478  [http-nio-8767-exec-3] DEBUG c.z.z.p.m.TestMapper.selectAllInfo - ==>  Preparing: select * from test; 
+2019-05-21 15:09:20.479  [http-nio-8767-exec-3] DEBUG c.z.z.p.m.TestMapper.selectAllInfo - ==> Parameters: 
+2019-05-21 15:09:20.495  [http-nio-8767-exec-3] DEBUG c.z.z.p.m.TestMapper.selectAllInfo - <==      Total: 3
+2019-05-21 15:10:28.646  [Thread-15] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-21 15:10:28.647  [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-05-21 15:10:28.668  [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-05-21 15:10:38.354  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on bogon with PID 909 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
+2019-05-21 15:10:38.358  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
+2019-05-21 15:10:40.077  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
+2019-05-21 15:10:40.106  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-21 15:10:40.106  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-21 15:10:40.210  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-21 15:10:40.211  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1671 ms
+2019-05-21 15:10:40.822  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-21 15:10:41.231  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
+2019-05-21 15:10:41.236  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 3.839 seconds (JVM running for 4.996)
+2019-05-21 15:10:45.875  [http-nio-8767-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-21 15:10:45.875  [http-nio-8767-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-21 15:10:45.886  [http-nio-8767-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2019-05-21 15:10:45.924  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - test1==>1
+2019-05-21 15:10:45.924  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - cuishuai==>2
+2019-05-21 15:10:45.924  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - wangshuang==>3
+2019-05-21 15:10:45.952  [http-nio-8767-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-05-21 15:10:45.957  [http-nio-8767-exec-2] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-05-21 15:10:46.326  [http-nio-8767-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-05-21 15:10:46.338  [http-nio-8767-exec-2] DEBUG c.z.z.p.m.TestMapper.selectAllInfo - ==>  Preparing: select * from test; 
+2019-05-21 15:10:46.373  [http-nio-8767-exec-2] DEBUG c.z.z.p.m.TestMapper.selectAllInfo - ==> Parameters: 
+2019-05-21 15:10:46.409  [http-nio-8767-exec-2] DEBUG c.z.z.p.m.TestMapper.selectAllInfo - <==      Total: 3
+2019-05-21 17:01:18.272  [Thread-10] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-21 17:01:18.278  [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-05-21 17:01:18.288  [Thread-10] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-05-21 17:26:00.468  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on cuishuaideMacBook-Air.local with PID 1050 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
+2019-05-21 17:26:00.490  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
+2019-05-21 17:26:03.368  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
+2019-05-21 17:26:03.414  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-21 17:26:03.415  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-21 17:26:03.557  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-21 17:26:03.558  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2967 ms
+2019-05-21 17:26:04.366  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-21 17:26:04.841  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
+2019-05-21 17:26:04.847  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 5.773 seconds (JVM running for 7.288)
+2019-05-21 17:26:37.655  [http-nio-8767-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-21 17:26:37.656  [http-nio-8767-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-21 17:26:37.673  [http-nio-8767-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2019-05-21 17:45:29.022  [Thread-14] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-21 17:45:43.017  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on cuishuaideMacBook-Air.local with PID 1071 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
+2019-05-21 17:45:43.023  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
+2019-05-21 17:45:45.529  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
+2019-05-21 17:45:45.564  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-21 17:45:45.564  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-21 17:45:45.700  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-21 17:45:45.701  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2565 ms
+2019-05-21 17:45:46.372  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-21 17:45:46.784  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
+2019-05-21 17:45:46.791  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 4.937 seconds (JVM running for 6.445)
+2019-05-21 17:45:58.786  [http-nio-8767-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-21 17:45:58.786  [http-nio-8767-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-21 17:45:58.795  [http-nio-8767-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2019-05-21 17:46:51.112  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>
+2019-05-21 18:09:58.077  [Thread-12] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-21 18:10:07.704  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on cuishuaideMacBook-Air.local with PID 1090 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
+2019-05-21 18:10:07.715  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
+2019-05-21 18:10:09.694  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
+2019-05-21 18:10:09.728  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-21 18:10:09.729  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-21 18:10:09.869  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-21 18:10:09.870  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2021 ms
+2019-05-21 18:10:10.757  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-21 18:10:11.202  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
+2019-05-21 18:10:11.212  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 4.634 seconds (JVM running for 5.816)
+2019-05-21 18:11:54.001  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-21 18:11:54.002  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-21 18:11:54.013  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2019-05-21 18:11:54.052  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
+2019-05-21 18:11:54.054  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>0.01
+2019-05-21 18:11:54.054  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
+2019-05-21 18:11:54.055  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
+2019-05-21 18:11:54.055  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
+2019-05-21 18:11:54.055  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
+2019-05-21 18:11:54.055  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
+2019-05-21 18:13:13.080  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
+2019-05-21 18:13:13.081  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>0.01
+2019-05-21 18:13:13.081  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
+2019-05-21 18:13:13.082  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
+2019-05-21 18:13:13.082  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
+2019-05-21 18:13:13.082  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
+2019-05-21 18:13:13.082  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
