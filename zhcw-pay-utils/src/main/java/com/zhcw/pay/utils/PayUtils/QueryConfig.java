@@ -3,13 +3,13 @@ package com.zhcw.pay.utils.PayUtils;
 //查询相关参数
 public class QueryConfig extends Config{
 
-    public String mch_id;
+    public String mp_id;
     public String trade_no;
     public String ds_trade_no;
     public String tp_trade_no;
 
-    public void initParams(String mch_id,String trade_no,String ds_trade_no,String tp_trade_no){
-        this.mch_id=mch_id;
+    public void initParams(String mp_id,String trade_no,String ds_trade_no,String tp_trade_no){
+        this.mp_id=mp_id;
         if(trade_no!=""){
             this.trade_no=trade_no;
         }else if(ds_trade_no!=""){
