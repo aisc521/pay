@@ -44,6 +44,7 @@ public class QueryTradeApi {
         queryConfig.initParams(StaticV.mp_id,"",requestMap.get("ds_trade_no").toString(),"");
         Client client=new Client();
         String data=client.request(queryConfig,"/pay/tradequery");
+        logger.info("start------pay_query--------result_info---"+data);
         resultMap.put("code","20000");
         resultMap.put("msg",data);
         logger.info("end------pay_query--------request");
@@ -54,9 +55,8 @@ public class QueryTradeApi {
      * 交易状态查询api  接口 请求
      * @return
      */
-    @PostMapping("pay_query")
-    public  Map tradeQuery_interface(QueryConfig queryConfig) throws Exception {
-        logger.info("start------pay_query--------request");
+    public static Map tradeQuery_interface(QueryConfig queryConfig) throws Exception {
+        //logger.info("start------pay_query--------request");
         Map resultMap = new HashMap();
         //获取请求参数
         JSONObject jsonObject = NotEmotyUtils.checkPayQueryAllFieldsIsNull(queryConfig);
@@ -68,22 +68,23 @@ public class QueryTradeApi {
         queryConfig.setMp_id(StaticV.mp_id);
         Client client=new Client();
         String data=client.request(queryConfig,"/pay/tradequery");
+        //logger.info("start------pay_query--------result_info---"+data);
         resultMap.put("code","20000");
         resultMap.put("msg",data);
-        logger.info("end------pay_query--------request");
+        //logger.info("end------pay_query--------request");
         return resultMap;
     }
 
-    public  void main(String[] args){
-        QueryConfig payConfig = new QueryConfig();
-        payConfig.initParams(
-                "","","1234",
-                ""
-        );
-        try {
-            tradeQuery_interface(payConfig);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    public static void main(String[] args){
+//        QueryConfig payConfig = new QueryConfig();
+//        payConfig.initParams(
+//                "","","2",
+//                ""
+//        );
+//        try {
+//            tradeQuery_interface(payConfig);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 }

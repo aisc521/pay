@@ -9,7 +9,6 @@ import com.zhcw.pay.utils.PayUtils.StaticV;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,7 +17,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.zhcw.pay.utils.CommUtils.BeanUtils.checkObjAllFieldsIsNull;
 import static com.zhcw.pay.utils.CommUtils.MapUtils.validateParamMap;
 
 @RestController
@@ -51,6 +49,7 @@ public class PayApi {
         );
         Client client=new Client();
         String data=client.request(payConfig,"/pay/wap");
+        logger.info("start------pay--------result_info---"+data);
         resultMap.put("code","20000");
         resultMap.put("msg",data);
         logger.info("end------pay--------request");
@@ -75,25 +74,26 @@ public class PayApi {
         payConfig.setPay_fee(pay_fee);
         Client client=new Client();
         String data=client.request(payConfig,"/pay/wap");
+        //logger.info("start------pay--------result_info---"+data);
         resultMap.put("code","20000");
         resultMap.put("msg",data);
         //logger.info("start------pay--------end");
         return resultMap;
     }
 
-    public  static void main(String[] args){
-        PayConfig payConfig = new PayConfig();
-        payConfig.initParams(
-               "","1","15.32",
-                "AP", "描述",
-                "","www.baidu.com","www.baidu.com","192.168.64.201"
-        );
-        try {
-            pay_interface(payConfig);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+//    public  static void main(String[] args){
+//        PayConfig payConfig = new PayConfig();
+//        payConfig.initParams(
+//               "","3","16.32",
+//                "AP", "描述",
+//                "fff","www.baidu.com","www.baidu.com","192.168.64.201"
+//        );
+//        try {
+//            pay_interface(payConfig);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 
 
 }
