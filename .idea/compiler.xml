@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zhcw-pay-pojo" />
         <module name="zhcw-pay-utils" />
         <module name="zhcw-pay-service" />
-        <module name="zhcw-pay-mapper" />
         <module name="zhcw-pay-service-web-api" />
+        <module name="zhcw-pay-pojo" />
+        <module name="zhcw-pay-mapper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

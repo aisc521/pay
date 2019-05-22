@@ -1,12 +1,10 @@
 package com.zhcw.pay.utils.PayUtils;
 
 public class StaticV {
-    public static String ds_id="DS0000000000000001";
-    public static String mch_id="MC0000000000000001";
-    public static String secret="b0af44d45682fa4c4e4ff553899dbd11";
+    public static String ds_id="DS1905201448096137";
+    public static String mp_id="MP1905211420137221";
+    public static String secret="0bb9ae4f35257b9e96c2b6194a4ffe61";
     //public static String serverRoot="http://openapi.zhifu6688.com:30010";
     public static String serverRoot=" http://openapi.totravel.cn";
 
 }
-
-//appId=wxd678efh567hg6787&nonceStr=fcd3d876798845158ab7d59279ca1898&package=prepay_id=wx01162338613042983cae462a3842411531&signType=MD5&timeStamp=1554107018&key=qazwsxedcrfvtgbyhnujmikolp111111

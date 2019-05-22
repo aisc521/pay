@@ -1,14 +1,22 @@
 package com.zhcw.zfb.api;
 
+import com.google.gson.Gson;
+import org.json.JSONObject;
+
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 接收异步
+ */
 public class PayNotiftApi {
-    /*public String notift(HttpServletRequest request){
+    public Map notift(HttpServletRequest request) throws IOException {
         InputStream is = null;
+        Map<String, Object> map = new HashMap<>();
         try {
             is = request.getInputStream();//获取输入流
             ArrayList<Byte> arr = new ArrayList<Byte>();
@@ -26,7 +34,8 @@ public class PayNotiftApi {
             }
             String json = new String(src);
             @SuppressWarnings("unchecked")
-            Map<String, Object> map = Context.gson.fromJson(json, HashMap.class);
+            Gson gson = new Gson();
+            map = gson.fromJson(json, HashMap.class);
             System.out.println(map);
         }  catch (Exception e) {
             e.printStackTrace();
@@ -34,5 +43,6 @@ public class PayNotiftApi {
             if (is != null)
                 is.close();
         }
-    }*/
+        return map;
+    }
 }

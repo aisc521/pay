@@ -1,10 +1,12 @@
 package com.zhcw.zfb.api;
 
+import com.zhcw.pay.utils.CommUtils.NumUtils;
 import com.zhcw.pay.utils.HttpUtils.RequestUtil;
 import com.zhcw.pay.utils.PayUtils.Client;
 import com.zhcw.pay.utils.PayUtils.PayConfig;
 import com.zhcw.pay.utils.PayUtils.StaticV;
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,13 +20,13 @@ import static com.zhcw.pay.utils.CommUtils.MapUtils.validateParamMap;
 @RestController
 @RequestMapping("zhcw")
 public class PayApi {
+
     /**
      * wap h5  支付api
      * @return
      */
     @PostMapping("pay")
     public Map pay(HttpServletRequest request){
-
         Map resultMap = new HashMap();
         //获取请求参数
         Map requestMap = RequestUtil.getParameters(request,true);
@@ -35,10 +37,11 @@ public class PayApi {
             resultMap.put("msg",entity.get("msg").toString());
         }
         PayConfig payConfig=new PayConfig();
+        String pay_fee = NumUtils.number(requestMap.get("pay_fee").toString());
         payConfig.initParams(
-                StaticV.mch_id,requestMap.get("ds_trade_no").toString(),requestMap.get("pay_fee").toString(),
+                StaticV.mp_id,requestMap.get("ds_trade_no").toString(),pay_fee,
                 requestMap.get("trade_type").toString(), requestMap.get("trade_subject").toString(),
-                requestMap.get("trade_memo").toString(),requestMap.get("notify_url").toString(),requestMap.get("callback_url").toString()
+                requestMap.get("trade_memo").toString(),requestMap.get("notify_url").toString(),requestMap.get("callback_url").toString(),requestMap.get("user_ip").toString()
         );
         Client client=new Client();
         String data=client.request(payConfig,"/pay/wap");

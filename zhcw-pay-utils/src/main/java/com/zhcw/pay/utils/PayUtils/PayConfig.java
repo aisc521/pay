@@ -7,7 +7,7 @@ public class PayConfig extends Config {
      * 商户id
      * 必填
      */
-    public String mch_id;
+    public String mp_id;
     /**
      * 渠道商系统付款交易号
      * 必填
@@ -59,8 +59,8 @@ public class PayConfig extends Config {
      */
     public String callback_url;
 
-    public void initParams(String mch_id,String ds_trade_no,String pay_fee,String trade_type,String trade_subject,String trade_memo,String notify_url,String callback_url){
-        this.mch_id=mch_id;
+    public void initParams(String mp_id,String ds_trade_no,String pay_fee,String trade_type,String trade_subject,String trade_memo,String notify_url,String callback_url,String user_ip){
+        this.mp_id=mp_id;
         this.ds_trade_no=ds_trade_no;
         this.pay_fee=pay_fee;
         this.trade_type=trade_type;
@@ -68,6 +68,6 @@ public class PayConfig extends Config {
         this.trade_memo=trade_memo;
         this.notify_url=notify_url;
         this.callback_url=callback_url;
-        this.user_ip="127.0.0.1";
+        this.user_ip=user_ip;
     }
 }
