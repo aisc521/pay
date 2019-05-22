@@ -2,6 +2,8 @@ package com.zhcw.zfb.api;
 
 import com.google.gson.Gson;
 import org.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +21,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("zhcw")
 public class PayNotiftApi {
+    private Logger logger = LoggerFactory.getLogger(PayNotiftApi.class);
     /**
      * 交易异步通知
      * @param request
@@ -48,6 +51,7 @@ public class PayNotiftApi {
             @SuppressWarnings("unchecked")
             Gson gson = new Gson();
             map = gson.fromJson(json, HashMap.class);
+            logger.info("异步通知消息:===============================" + map.toString());
         }  catch (Exception e) {
             e.printStackTrace();
         }  finally {

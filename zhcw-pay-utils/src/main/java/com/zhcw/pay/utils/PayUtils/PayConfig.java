@@ -1,6 +1,13 @@
 package com.zhcw.pay.utils.PayUtils;
 
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+import lombok.ToString;
+
 //支付相关参数
+@Data
+@ToString
+@RequiredArgsConstructor
 public class PayConfig extends Config {
 
     /**

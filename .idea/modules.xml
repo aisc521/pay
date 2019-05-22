@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/pay.iml" filepath="$PROJECT_DIR$/.idea/pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhcw-pay-mapper/zhcw-pay-mapper.iml" filepath="$PROJECT_DIR$/zhcw-pay-mapper/zhcw-pay-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhcw-pay-pojo/zhcw-pay-pojo.iml" filepath="$PROJECT_DIR$/zhcw-pay-pojo/zhcw-pay-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhcw-pay-service/zhcw-pay-service.iml" filepath="$PROJECT_DIR$/zhcw-pay-service/zhcw-pay-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhcw-pay-service-web-api/zhcw-pay-service-web-api.iml" filepath="$PROJECT_DIR$/zhcw-pay-service-web-api/zhcw-pay-service-web-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhcw-pay-utils/zhcw-pay-utils.iml" filepath="$PROJECT_DIR$/zhcw-pay-utils/zhcw-pay-utils.iml" />
+    </modules>
+  </component>
+</project>
