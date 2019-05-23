@@ -29,8 +29,7 @@ public class PayNotiftApi {
     public Map payNotift(HttpServletRequest request) throws IOException {
         logger.info("异步通知消息:==================start");
         Map map = PayNotiftUtils.notift(request);
-        logger.info("异步通知消息:===============================" + map.toString());
-        logger.info("异步通知消息:==================end");
+        logger.info("异步通知消息:==================end" + map.toString());
         return map;
     }
 
@@ -39,8 +38,7 @@ public class PayNotiftApi {
     public Map payNotift1(HttpServletRequest request) throws IOException {
         logger.info("异步通知消息:==================start");
         Map requestMap = RequestUtil.getParameters(request,true);
-        logger.info("异步通知消息:===============================" + requestMap.toString());
-        logger.info("异步通知消息:==================end");
+        logger.info("异步通知消息:==================end" + requestMap.toString());
         return requestMap;
     }
 }
