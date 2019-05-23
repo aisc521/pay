@@ -48,6 +48,7 @@ public class PayApi {
                 requestMap.get("trade_memo").toString(),requestMap.get("notify_url").toString(),requestMap.get("callback_url").toString(),requestMap.get("user_ip").toString()
         );
         Client client=new Client();
+        logger.info("start------pay--------query_info---"+payConfig.toString());
         String data=client.request(payConfig,"/pay/wap");
         logger.info("start------pay--------result_info---"+data);
         resultMap.put("code","20000");

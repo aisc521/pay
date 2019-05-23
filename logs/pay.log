@@ -1,316 +1,79 @@
-2019-05-22 09:27:28.838  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on bogon with PID 880 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
-2019-05-22 09:27:28.851  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
-2019-05-22 09:27:31.235  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
-2019-05-22 09:27:31.277  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-05-22 09:27:31.278  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-05-22 09:27:31.458  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-05-22 09:27:31.459  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2475 ms
-2019-05-22 09:27:32.418  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-22 09:27:33.529  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
-2019-05-22 09:27:33.537  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 5.932 seconds (JVM running for 9.911)
-2019-05-22 09:28:11.369  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-05-22 09:28:11.369  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-05-22 09:28:11.389  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
-2019-05-22 09:28:11.438  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 09:28:11.438  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>1
-2019-05-22 09:28:11.438  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 09:28:11.439  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 09:28:11.439  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 09:28:11.439  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
-2019-05-22 09:28:11.440  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 09:28:40.292  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 09:28:40.293  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>1.9876
-2019-05-22 09:28:40.293  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 09:28:40.293  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 09:28:40.294  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 09:28:40.295  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
-2019-05-22 09:28:40.295  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 09:42:23.194  [Thread-15] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2019-05-22 09:42:34.472  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on bogon with PID 929 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
-2019-05-22 09:42:34.485  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
-2019-05-22 09:42:36.575  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
-2019-05-22 09:42:36.609  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-05-22 09:42:36.609  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-05-22 09:42:36.730  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-05-22 09:42:36.730  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2075 ms
-2019-05-22 09:42:37.354  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-22 09:42:37.910  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
-2019-05-22 09:42:37.916  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 4.763 seconds (JVM running for 6.31)
-2019-05-22 09:42:51.858  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-05-22 09:42:51.859  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-05-22 09:42:51.869  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
-2019-05-22 09:42:51.908  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 09:42:51.908  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>1.9876
-2019-05-22 09:42:51.908  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 09:42:51.908  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 09:42:51.908  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 09:42:51.909  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
-2019-05-22 09:42:51.909  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 09:49:23.300  [Thread-12] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2019-05-22 09:49:33.503  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on bogon with PID 936 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
-2019-05-22 09:49:33.531  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
-2019-05-22 09:49:36.483  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
-2019-05-22 09:49:36.521  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-05-22 09:49:36.522  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-05-22 09:49:36.668  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-05-22 09:49:36.668  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3028 ms
-2019-05-22 09:49:37.583  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-22 09:49:38.177  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
-2019-05-22 09:49:38.183  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 6.384 seconds (JVM running for 8.156)
-2019-05-22 09:49:47.130  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-05-22 09:49:47.131  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-05-22 09:49:47.142  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
-2019-05-22 09:49:47.179  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 09:49:47.179  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>1.9876
-2019-05-22 09:49:47.179  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 09:49:47.180  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 09:49:47.180  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 09:49:47.180  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
-2019-05-22 09:49:47.180  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 09:49:47.181  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - user_ip==>192.168.64.201
-2019-05-22 09:51:32.715  [Thread-16] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2019-05-22 09:51:43.711  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on bogon with PID 942 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
-2019-05-22 09:51:43.729  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
-2019-05-22 09:51:46.857  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
-2019-05-22 09:51:46.892  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-05-22 09:51:46.892  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-05-22 09:51:47.017  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-05-22 09:51:47.017  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2887 ms
-2019-05-22 09:51:47.665  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-22 09:51:48.119  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
-2019-05-22 09:51:48.124  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 5.573 seconds (JVM running for 6.976)
-2019-05-22 09:51:52.183  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-05-22 09:51:52.183  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-05-22 09:51:52.198  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 14 ms
-2019-05-22 09:51:52.239  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 09:51:52.239  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>1.9876
-2019-05-22 09:51:52.240  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 09:51:52.240  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 09:51:52.240  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 09:51:52.241  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
-2019-05-22 09:51:52.241  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 09:51:52.241  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - user_ip==>192.168.64.201
-2019-05-22 09:52:41.580  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 09:52:41.580  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>1.9876
-2019-05-22 09:52:41.581  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>WX
-2019-05-22 09:52:41.581  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 09:52:41.581  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 09:52:41.581  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
-2019-05-22 09:52:41.581  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 09:52:41.581  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - user_ip==>192.168.64.201
-2019-05-22 09:52:53.351  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 09:52:53.352  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>1.9876
-2019-05-22 09:52:53.352  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 09:52:53.352  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 09:52:53.353  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 09:52:53.353  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
-2019-05-22 09:52:53.353  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 09:52:53.353  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - user_ip==>192.168.64.201
-2019-05-22 10:08:38.674  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on DESKTOP-T852OHU with PID 21996 (D:\code\pay\zhcw-pay-service-web-api\target\classes started by SJGC in D:\code\pay)
-2019-05-22 10:08:38.677  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
-2019-05-22 10:08:39.477  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
-2019-05-22 10:08:39.494  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-05-22 10:08:39.494  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-05-22 10:08:39.587  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-05-22 10:08:39.587  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 881 ms
-2019-05-22 10:08:39.969  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-22 10:08:40.216  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
-2019-05-22 10:08:40.219  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 1.874 seconds (JVM running for 3.737)
-2019-05-22 10:09:10.944  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-05-22 10:09:10.944  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-05-22 10:09:10.949  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
-2019-05-22 10:09:10.966  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 10:09:10.966  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>1.9876
-2019-05-22 10:09:10.967  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 10:09:10.967  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 10:09:10.967  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 10:09:10.967  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
-2019-05-22 10:09:10.967  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 10:09:10.967  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - user_ip==>192.168.64.201
-2019-05-22 10:09:36.994  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on DESKTOP-T852OHU with PID 23532 (D:\code\pay\zhcw-pay-service-web-api\target\classes started by SJGC in D:\code\pay)
-2019-05-22 10:09:36.996  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
-2019-05-22 10:09:37.806  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
-2019-05-22 10:09:37.824  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-05-22 10:09:37.824  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-05-22 10:09:37.926  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-05-22 10:09:37.926  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 900 ms
-2019-05-22 10:09:38.269  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-22 10:09:38.519  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
-2019-05-22 10:09:38.521  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 1.956 seconds (JVM running for 2.964)
-2019-05-22 10:09:42.667  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-05-22 10:09:42.668  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-05-22 10:09:42.672  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
-2019-05-22 10:09:42.691  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 10:09:42.692  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>1.9876
-2019-05-22 10:09:42.692  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 10:09:42.692  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 10:09:42.692  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 10:09:42.692  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
-2019-05-22 10:09:42.692  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 10:09:42.692  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - user_ip==>192.168.64.201
-2019-05-22 10:10:01.814  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 10:10:01.815  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>100
-2019-05-22 10:10:01.815  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 10:10:01.815  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 10:10:01.815  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 10:10:01.815  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
-2019-05-22 10:10:01.815  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 10:10:01.815  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - user_ip==>192.168.64.201
-2019-05-22 10:30:09.367  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on DESKTOP-T852OHU with PID 23792 (D:\code\pay\zhcw-pay-service-web-api\target\classes started by SJGC in D:\code\pay)
-2019-05-22 10:30:09.369  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
-2019-05-22 10:30:10.155  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
-2019-05-22 10:30:10.172  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-05-22 10:30:10.173  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-05-22 10:30:10.272  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-05-22 10:30:10.272  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 873 ms
-2019-05-22 10:30:10.599  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-22 10:30:10.839  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
-2019-05-22 10:30:10.841  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 1.873 seconds (JVM running for 2.874)
-2019-05-22 10:30:16.105  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-05-22 10:30:16.105  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-05-22 10:30:16.110  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
-2019-05-22 10:30:16.129  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 10:30:41.081  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 10:31:12.177  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on DESKTOP-T852OHU with PID 12236 (D:\code\pay\zhcw-pay-service-web-api\target\classes started by SJGC in D:\code\pay)
-2019-05-22 10:31:12.180  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
-2019-05-22 10:31:12.981  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
-2019-05-22 10:31:12.998  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-05-22 10:31:12.999  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-05-22 10:31:13.097  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-05-22 10:31:13.098  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 883 ms
-2019-05-22 10:31:13.424  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-22 10:31:13.663  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
-2019-05-22 10:31:13.665  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 1.877 seconds (JVM running for 2.885)
-2019-05-22 10:31:20.779  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-05-22 10:31:20.779  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-05-22 10:31:20.783  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
-2019-05-22 10:31:20.800  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 10:32:03.538  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>1234
-2019-05-22 13:49:12.113  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on cuishuaideMacBook-Air.local with PID 1423 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
-2019-05-22 13:49:12.123  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
-2019-05-22 13:49:14.281  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
-2019-05-22 13:49:14.323  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-05-22 13:49:14.324  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-05-22 13:49:14.520  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-05-22 13:49:14.521  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2328 ms
-2019-05-22 13:49:15.350  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-22 13:49:15.528  [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'queryTradeApi' method 
-public static java.util.Map com.zhcw.zfb.api.QueryTradeApi.tradeQuery_interface(com.zhcw.pay.utils.PayUtils.QueryConfig) throws java.lang.Exception
-to {POST /zhcw/pay_query}: There is already 'queryTradeApi' bean method
-public java.util.Map com.zhcw.zfb.api.QueryTradeApi.tradeQuery(javax.servlet.http.HttpServletRequest) mapped.
-2019-05-22 13:49:15.528  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2019-05-22 13:49:15.533  [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2019-05-22 13:49:15.547  [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-05-22 13:49:15.560  [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'queryTradeApi' method 
-public static java.util.Map com.zhcw.zfb.api.QueryTradeApi.tradeQuery_interface(com.zhcw.pay.utils.PayUtils.QueryConfig) throws java.lang.Exception
-to {POST /zhcw/pay_query}: There is already 'queryTradeApi' bean method
-public java.util.Map com.zhcw.zfb.api.QueryTradeApi.tradeQuery(javax.servlet.http.HttpServletRequest) mapped.
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
-	at com.zhcw.zfb.PayServiceApplication.main(PayServiceApplication.java:15)
-Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'queryTradeApi' method 
-public static java.util.Map com.zhcw.zfb.api.QueryTradeApi.tradeQuery_interface(com.zhcw.pay.utils.PayUtils.QueryConfig) throws java.lang.Exception
-to {POST /zhcw/pay_query}: There is already 'queryTradeApi' bean method
-public java.util.Map com.zhcw.zfb.api.QueryTradeApi.tradeQuery(javax.servlet.http.HttpServletRequest) mapped.
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
-	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
-	... 16 common frames omitted
-2019-05-22 13:50:35.933  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on cuishuaideMacBook-Air.local with PID 1433 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
-2019-05-22 13:50:35.943  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
-2019-05-22 13:50:37.239  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
-2019-05-22 13:50:37.272  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-05-22 13:50:37.272  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-05-22 13:50:37.393  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-05-22 13:50:37.393  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1398 ms
-2019-05-22 13:50:38.045  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-22 13:50:38.529  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
-2019-05-22 13:50:38.535  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 23.233 seconds (JVM running for 29.096)
-2019-05-22 13:51:47.007  [Thread-49] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2019-05-22 13:52:27.591  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on cuishuaideMacBook-Air.local with PID 1437 (/Users/cuishuai/Desktop/pay/zhcw-pay-service-web-api/target/classes started by cuishuai in /Users/cuishuai/Desktop/pay)
-2019-05-22 13:52:27.601  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
-2019-05-22 13:52:29.186  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
-2019-05-22 13:52:29.220  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2019-05-22 13:52:29.220  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-05-22 13:52:29.377  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2019-05-22 13:52:29.378  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1723 ms
-2019-05-22 13:52:30.014  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2019-05-22 13:52:30.494  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
-2019-05-22 13:52:30.501  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 23.752 seconds (JVM running for 30.029)
-2019-05-22 13:53:14.837  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-05-22 13:53:14.838  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2019-05-22 13:53:14.854  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
-2019-05-22 13:53:21.517  [http-nio-8767-exec-1] INFO  com.zhcw.zfb.api.PayApi - start------pay--------request
-2019-05-22 13:53:22.342  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>3
-2019-05-22 13:53:22.344  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>10.32
-2019-05-22 13:53:22.346  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 13:53:22.348  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 13:53:22.351  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 13:53:22.354  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>www.baidu.com
-2019-05-22 13:53:22.358  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 13:53:22.362  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - user_ip==>192.168.64.201
-2019-05-22 13:53:31.593  [http-nio-8767-exec-1] INFO  com.zhcw.zfb.api.PayApi - start------pay--------result_info---{"status":0,"message":"OK","trade_no":"AT0522135330276540","ds_trade_no":"3","trade_type":"AP","prepay_url":"https://agt.haodiana.cn/pay/post?prepay_url=alipays%3A%2F%2Fplatformapi%2FstartApp%3FappId%3D10000011%26url%3Dhttps%253A%252F%252Fagt.haodiana.cn%252Fpay%252Fjs_hda%253Ftoken_id%253DAT0522135330276540%2526version%253D1.0","sign":"9D6690133503BAB75D7DB6FA4F8A0B79"}
-2019-05-22 13:53:33.557  [http-nio-8767-exec-1] INFO  com.zhcw.zfb.api.PayApi - end------pay--------request
-2019-05-22 14:21:35.626  [http-nio-8767-exec-5] INFO  com.zhcw.zfb.api.PayApi - start------pay--------request
-2019-05-22 14:21:35.629  [http-nio-8767-exec-5] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>4
-2019-05-22 14:21:35.630  [http-nio-8767-exec-5] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>11.32
-2019-05-22 14:21:35.631  [http-nio-8767-exec-5] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 14:21:35.632  [http-nio-8767-exec-5] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 14:21:35.633  [http-nio-8767-exec-5] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 14:21:35.634  [http-nio-8767-exec-5] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>http://192.168.64.201:8767/zhcw/trade_notify
-2019-05-22 14:21:35.634  [http-nio-8767-exec-5] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 14:21:35.635  [http-nio-8767-exec-5] INFO  c.z.pay.utils.HttpUtils.RequestUtil - user_ip==>192.168.64.201
-2019-05-22 14:21:36.114  [http-nio-8767-exec-5] INFO  com.zhcw.zfb.api.PayApi - start------pay--------result_info---{"status":0,"message":"OK","trade_no":"AT0522142136316823","ds_trade_no":"4","trade_type":"AP","prepay_url":"https://agt.haodiana.cn/pay/post?prepay_url=alipays%3A%2F%2Fplatformapi%2FstartApp%3FappId%3D10000011%26url%3Dhttps%253A%252F%252Fagt.haodiana.cn%252Fpay%252Fjs_hda%253Ftoken_id%253DAT0522142136316823%2526version%253D1.0","sign":"A955D5DAFE1A1D8F2E5A1E27B4E88788"}
-2019-05-22 14:21:36.114  [http-nio-8767-exec-5] INFO  com.zhcw.zfb.api.PayApi - end------pay--------request
-2019-05-22 14:27:35.629  [http-nio-8767-exec-8] INFO  com.zhcw.zfb.api.PayApi - start------pay--------request
-2019-05-22 14:27:35.630  [http-nio-8767-exec-8] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>5
-2019-05-22 14:27:35.631  [http-nio-8767-exec-8] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>12.32
-2019-05-22 14:27:35.631  [http-nio-8767-exec-8] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 14:27:35.632  [http-nio-8767-exec-8] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>描述
-2019-05-22 14:27:35.632  [http-nio-8767-exec-8] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>描述2
-2019-05-22 14:27:35.633  [http-nio-8767-exec-8] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>http://192.168.64.201:8767/zhcw/trade_notify
-2019-05-22 14:27:35.633  [http-nio-8767-exec-8] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 14:27:35.634  [http-nio-8767-exec-8] INFO  c.z.pay.utils.HttpUtils.RequestUtil - user_ip==>192.168.64.201
-2019-05-22 14:27:37.340  [http-nio-8767-exec-8] INFO  com.zhcw.zfb.api.PayApi - start------pay--------result_info---{"status":0,"message":"OK","trade_no":"AT0522142737341414","ds_trade_no":"5","trade_type":"AP","prepay_url":"https://agt.haodiana.cn/pay/post?prepay_url=alipays%3A%2F%2Fplatformapi%2FstartApp%3FappId%3D10000011%26url%3Dhttps%253A%252F%252Fagt.haodiana.cn%252Fpay%252Fjs_hda%253Ftoken_id%253DAT0522142737341414%2526version%253D1.0","sign":"5CBA1CD6D9578374638B45FA6D3E7F62"}
-2019-05-22 14:27:37.341  [http-nio-8767-exec-8] INFO  com.zhcw.zfb.api.PayApi - end------pay--------request
-2019-05-22 14:32:47.534  [http-nio-8767-exec-2] INFO  com.zhcw.zfb.api.QueryTradeApi - start------pay_query--------request
-2019-05-22 14:32:47.536  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>5
-2019-05-22 14:32:48.011  [http-nio-8767-exec-2] INFO  com.zhcw.zfb.api.QueryTradeApi - start------pay_query--------result_info---{"status":0,"message":"OK","trade_status":"PAID","trade_no":"AT0522142737341414","ds_trade_no":"5","tp_trade_no":"2019052210152010020001780154790713","trade_type":"AP","pay_type":"WAP","trade_memo":"描述2","trade_fee":12.32,"pay_fee":12.32,"pay_time":"2019-05-22 14:30:05","ds_id":"DS1905201448096137","mp_id":"MP1905211420137221","mch_id":"MC1905211020132654","version":"1.0","sign":"CC5F103295D1E1EFB0AF1FDFD6C4A17D"}
-2019-05-22 14:32:48.011  [http-nio-8767-exec-2] INFO  com.zhcw.zfb.api.QueryTradeApi - end------pay_query--------request
-2019-05-22 14:36:25.119  [http-nio-8767-exec-4] INFO  com.zhcw.zfb.api.PayApi - start------pay--------request
-2019-05-22 14:36:25.120  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>6
-2019-05-22 14:36:25.120  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - pay_fee==>13.32
-2019-05-22 14:36:25.121  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_type==>AP
-2019-05-22 14:36:25.121  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_subject==>第六个支付
-2019-05-22 14:36:25.121  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - trade_memo==>第六个支付
-2019-05-22 14:36:25.123  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - notify_url==>http://192.168.64.201:8767/zhcw/trade_notify
-2019-05-22 14:36:25.124  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - callback_url==>www.baidu.com
-2019-05-22 14:36:25.124  [http-nio-8767-exec-4] INFO  c.z.pay.utils.HttpUtils.RequestUtil - user_ip==>192.168.64.201
-2019-05-22 14:36:25.724  [http-nio-8767-exec-4] INFO  com.zhcw.zfb.api.PayApi - start------pay--------result_info---{"status":0,"message":"OK","trade_no":"AT0522143625628438","ds_trade_no":"6","trade_type":"AP","prepay_url":"https://agt.haodiana.cn/pay/post?prepay_url=alipays%3A%2F%2Fplatformapi%2FstartApp%3FappId%3D10000011%26url%3Dhttps%253A%252F%252Fagt.haodiana.cn%252Fpay%252Fjs_hda%253Ftoken_id%253DAT0522143625628438%2526version%253D1.0","sign":"30C9C943A8C5A914A544F9B22113D55D"}
-2019-05-22 14:36:25.725  [http-nio-8767-exec-4] INFO  com.zhcw.zfb.api.PayApi - end------pay--------request
+2019-05-23 08:55:27.556  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on DESKTOP-T852OHU with PID 16440 (D:\code\payDemo\zhcw-pay-service-web-api\target\classes started by SJGC in D:\code\payDemo)
+2019-05-23 08:55:27.561  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
+2019-05-23 08:55:28.388  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
+2019-05-23 08:55:28.404  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-23 08:55:28.405  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 08:55:28.504  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-23 08:55:28.505  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 908 ms
+2019-05-23 08:55:28.835  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 08:55:29.072  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
+2019-05-23 08:55:29.074  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 1.926 seconds (JVM running for 2.983)
+2019-05-23 08:55:37.013  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 08:55:37.013  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-23 08:55:37.017  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2019-05-23 08:55:37.033  [http-nio-8767-exec-1] INFO  com.zhcw.zfb.api.QueryTradeApi - start------pay_query--------request
+2019-05-23 08:55:37.043  [http-nio-8767-exec-1] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>9
+2019-05-23 08:55:38.008  [http-nio-8767-exec-1] INFO  com.zhcw.zfb.api.QueryTradeApi - start------pay_query--------result_info---{"status":131,"message":"SYS_ERROR_131--商户数据不存在","sign":"4670D4E5DD8CC3871802586CDE09BD77"}
+2019-05-23 08:55:38.008  [http-nio-8767-exec-1] INFO  com.zhcw.zfb.api.QueryTradeApi - end------pay_query--------request
+2019-05-23 08:55:46.072  [http-nio-8767-exec-2] INFO  com.zhcw.zfb.api.QueryTradeApi - start------pay_query--------request
+2019-05-23 08:55:46.072  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>10
+2019-05-23 08:55:46.245  [http-nio-8767-exec-2] INFO  com.zhcw.zfb.api.QueryTradeApi - start------pay_query--------result_info---{"status":131,"message":"SYS_ERROR_131--商户数据不存在","sign":"4670D4E5DD8CC3871802586CDE09BD77"}
+2019-05-23 08:55:46.245  [http-nio-8767-exec-2] INFO  com.zhcw.zfb.api.QueryTradeApi - end------pay_query--------request
+2019-05-23 08:55:59.740  [http-nio-8767-exec-3] INFO  com.zhcw.zfb.api.QueryTradeApi - start------pay_query--------request
+2019-05-23 08:55:59.741  [http-nio-8767-exec-3] INFO  c.z.pay.utils.HttpUtils.RequestUtil - ds_trade_no==>8
+2019-05-23 08:56:00.095  [http-nio-8767-exec-3] INFO  com.zhcw.zfb.api.QueryTradeApi - start------pay_query--------result_info---{"status":0,"message":"OK","trade_status":"FAIL","sign":"CDC3280B63D0B7175E890EC1F793A718"}
+2019-05-23 08:56:00.095  [http-nio-8767-exec-3] INFO  com.zhcw.zfb.api.QueryTradeApi - end------pay_query--------request
+2019-05-23 10:20:13.270  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on DESKTOP-T852OHU with PID 29004 (D:\code\payDemo\zhcw-pay-service-web-api\target\classes started by SJGC in D:\code\payDemo)
+2019-05-23 10:20:13.272  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
+2019-05-23 10:20:14.164  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
+2019-05-23 10:20:14.182  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-23 10:20:14.182  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 10:20:14.306  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-23 10:20:14.306  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1002 ms
+2019-05-23 10:20:14.670  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 10:20:14.922  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
+2019-05-23 10:20:14.925  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 2.034 seconds (JVM running for 3.037)
+2019-05-23 10:21:25.439  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 10:21:25.440  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-23 10:21:25.444  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2019-05-23 10:22:27.690  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on DESKTOP-T852OHU with PID 28964 (D:\code\payDemo\zhcw-pay-service-web-api\target\classes started by SJGC in D:\code\payDemo)
+2019-05-23 10:22:27.693  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
+2019-05-23 10:22:28.595  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
+2019-05-23 10:22:28.613  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-23 10:22:28.614  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 10:22:28.780  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-23 10:22:28.780  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1050 ms
+2019-05-23 10:22:29.325  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 10:22:29.597  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
+2019-05-23 10:22:29.600  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 2.321 seconds (JVM running for 3.427)
+2019-05-23 10:22:34.160  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 10:22:34.160  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-23 10:22:34.166  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2019-05-23 10:24:03.819  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on DESKTOP-T852OHU with PID 30060 (D:\code\payDemo\zhcw-pay-service-web-api\target\classes started by SJGC in D:\code\payDemo)
+2019-05-23 10:24:03.821  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
+2019-05-23 10:24:04.842  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
+2019-05-23 10:24:04.861  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-23 10:24:04.861  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 10:24:04.971  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-23 10:24:04.971  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1118 ms
+2019-05-23 10:24:05.374  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 10:24:05.664  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
+2019-05-23 10:24:05.667  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 2.229 seconds (JVM running for 3.237)
+2019-05-23 10:24:08.564  [http-nio-8767-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 10:24:08.564  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-23 10:24:08.571  [http-nio-8767-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2019-05-23 10:29:24.621  [main] INFO  com.zhcw.zfb.PayServiceApplication - Starting PayServiceApplication on DESKTOP-T852OHU with PID 27440 (D:\code\payDemo\zhcw-pay-service-web-api\target\classes started by SJGC in D:\code\payDemo)
+2019-05-23 10:29:24.626  [main] INFO  com.zhcw.zfb.PayServiceApplication - No active profile set, falling back to default profiles: default
+2019-05-23 10:29:25.744  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8767 (http)
+2019-05-23 10:29:25.766  [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2019-05-23 10:29:25.766  [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-05-23 10:29:25.875  [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-05-23 10:29:25.876  [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1164 ms
+2019-05-23 10:29:26.247  [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-23 10:29:26.524  [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8767 (http) with context path ''
+2019-05-23 10:29:26.526  [main] INFO  com.zhcw.zfb.PayServiceApplication - Started PayServiceApplication in 2.397 seconds (JVM running for 3.48)
+2019-05-23 10:29:32.597  [http-nio-8767-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-23 10:29:32.597  [http-nio-8767-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-05-23 10:29:32.602  [http-nio-8767-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2019-05-23 10:29:32.621  [http-nio-8767-exec-2] INFO  c.z.pay.utils.HttpUtils.RequestUtil - kkkkkk==>ooooooo
+2019-05-23 10:29:32.622  [http-nio-8767-exec-2] INFO  com.zhcw.zfb.api.PayNotiftApi - 异步通知消息:==============================={kkkkkk=ooooooo}

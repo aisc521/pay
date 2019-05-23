@@ -1,9 +1,12 @@
 package com.zhcw.zfb.api;
 
 import com.google.gson.Gson;
+import com.zhcw.pay.utils.HttpUtils.RequestUtil;
+import com.zhcw.pay.utils.PayUtils.PayNotiftUtils;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,35 +32,17 @@ public class PayNotiftApi {
      * @throws IOException
      */
     @PostMapping("/trade_notify")
-    public Map notift(HttpServletRequest request) throws IOException {
-        InputStream is = null;
-        Map<String, Object> map = new HashMap<>();
-        try {
-            is = request.getInputStream();//获取输入流
-            ArrayList<Byte> arr = new ArrayList<Byte>();
-            byte[] buffer = new byte[50];//缓存数组
-            int len;
-            //读取数据
-            while ((len=is.read(buffer))!=-1) {
-                for (int i = 0; i < len; i++) {
-                    arr.add(buffer[i]);
-                }
-            }
-            byte[] src = new byte[arr.size()];
-            for (int i = 0; i < src.length; i++) {
-                src[i] = arr.get(i);
-            }
-            String json = new String(src);
-            @SuppressWarnings("unchecked")
-            Gson gson = new Gson();
-            map = gson.fromJson(json, HashMap.class);
-            logger.info("异步通知消息:===============================" + map.toString());
-        }  catch (Exception e) {
-            e.printStackTrace();
-        }  finally {
-            if (is != null)
-                is.close();
-        }
+    //@GetMapping("/trade_notify")
+    public Map payNotift(HttpServletRequest request) throws IOException {
+        Map map = PayNotiftUtils.notift(request);
         return map;
+    }
+
+    @PostMapping("/trade_notify1")
+    //@GetMapping("/trade_notify")
+    public Map payNotift1(HttpServletRequest request) throws IOException {
+        Map requestMap = RequestUtil.getParameters(request,true);
+        logger.info("异步通知消息:===============================" + requestMap.toString());
+        return requestMap;
     }
 }

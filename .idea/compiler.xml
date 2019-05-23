@@ -6,25 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zhcw-pay-service-web-api" />
-        <module name="zhcw-pay-service" />
-        <module name="zhcw-pay-utils" />
-        <module name="zhcw-pay-pojo" />
         <module name="zhcw-pay-mapper" />
+        <module name="zhcw-pay-pojo" />
+        <module name="zhcw-pay-service" />
+        <module name="zhcw-pay-service-web-api" />
+        <module name="zhcw-pay-utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="pay-service-pay-web-api" target="1.5" />
       <module name="pay-service-web-api" target="1.5" />
+      <module name="payDemo" target="1.8" />
+      <module name="zhcw-pay-mapper" target="1.8" />
+      <module name="zhcw-pay-pojo" target="1.8" />
+      <module name="zhcw-pay-service" target="1.8" />
+      <module name="zhcw-pay-service-web-api" target="1.8" />
+      <module name="zhcw-pay-utils" target="1.8" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="zhcw-pay-mapper" options="-parameters" />
-      <module name="zhcw-pay-pojo" options="-parameters" />
-      <module name="zhcw-pay-service" options="-parameters" />
-      <module name="zhcw-pay-service-web-api" options="-parameters" />
-      <module name="zhcw-pay-utils" options="-parameters" />
-    </option>
   </component>
 </project>
