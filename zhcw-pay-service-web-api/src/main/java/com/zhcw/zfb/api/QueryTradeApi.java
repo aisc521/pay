@@ -42,8 +42,8 @@ public class QueryTradeApi {
         }
         QueryConfig queryConfig=new QueryConfig();
         queryConfig.initParams(StaticV.mp_id,"",requestMap.get("ds_trade_no").toString(),"");
-        Client client=new Client();
-        String data=client.request(queryConfig,"/pay/tradequery");
+        Client client = new Client();
+        String data = client.request(queryConfig,"/pay/tradequery");
         logger.info("start------pay_query--------result_info---"+data);
         resultMap.put("code","20000");
         resultMap.put("msg",data);
@@ -66,8 +66,8 @@ public class QueryTradeApi {
             return resultMap;
         }
         queryConfig.setMp_id(StaticV.mp_id);
-        Client client=new Client();
-        String data=client.request(queryConfig,"/pay/tradequery");
+        Client client = new Client();
+        String data = client.request(queryConfig,"/pay/tradequery");
         //logger.info("start------pay_query--------result_info---"+data);
         resultMap.put("code","20000");
         resultMap.put("msg",data);

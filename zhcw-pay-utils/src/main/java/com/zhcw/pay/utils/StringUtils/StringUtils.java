@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
  * 名称：StringUtils <br>
  * 描述：String工具类<br>
  *
- * @author 李鹏军
+ * @author cuishuai
  * @version 1.0
  * @since 1.0.0
  */

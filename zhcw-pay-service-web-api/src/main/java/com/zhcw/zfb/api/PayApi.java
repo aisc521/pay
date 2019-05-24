@@ -47,9 +47,9 @@ public class PayApi {
                 requestMap.get("trade_type").toString(), requestMap.get("trade_subject").toString(),
                 requestMap.get("trade_memo").toString(),requestMap.get("notify_url").toString(),requestMap.get("callback_url").toString(),requestMap.get("user_ip").toString()
         );
-        Client client=new Client();
+        Client client = new Client();
         logger.info("start------pay--------query_info---"+payConfig.toString());
-        String data=client.request(payConfig,"/pay/wap");
+        String data = client.request(payConfig,"/pay/wap");
         logger.info("start------pay--------result_info---"+data);
         resultMap.put("code","20000");
         resultMap.put("msg",data);
@@ -73,8 +73,8 @@ public class PayApi {
         String pay_fee = NumUtils.number(payConfig.getPay_fee());
         payConfig.setMp_id(StaticV.mp_id);
         payConfig.setPay_fee(pay_fee);
-        Client client=new Client();
-        String data=client.request(payConfig,"/pay/wap");
+        Client client = new Client();
+        String data = client.request(payConfig,"/pay/wap");
         //logger.info("start------pay--------result_info---"+data);
         resultMap.put("code","20000");
         resultMap.put("msg",data);

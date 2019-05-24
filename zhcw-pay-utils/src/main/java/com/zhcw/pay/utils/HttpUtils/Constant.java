@@ -3,9 +3,8 @@ package com.zhcw.pay.utils.HttpUtils;
 /**
  * 常量
  *
- * @author lipengjun
+ * @author cuishuai
  * @email 939961241@qq.com
- * @date 2016年11月15日 下午1:23:52
  */
 public class Constant {
     /**
